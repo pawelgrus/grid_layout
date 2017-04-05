@@ -68,6 +68,10 @@ h3 {
   font-family: 'Work Sans', sans-serif;
 }
 
+// p {
+//   margin: 2em 0 1em 0;                ----->>>> krótki przerywnik z pojęciem margin collapse
+// }
+
 .card {
   border: 1px solid #e5e7ef;
   & > h2 {
@@ -76,6 +80,23 @@ h3 {
     color: #21214e;
     padding: 1em;
     font-size: 1.3em;
+  }
+  .card-menu {
+    li {
+      a:before {
+        content: '';
+        display: inline-block;
+        vertical-align: middle;
+        padding-right: 10px;
+        margin-top: -4px;
+        width: 0; 
+        height: 0; 
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        
+        border-left: 5px solid blue;
+      }
+    }
   }
 }
 
