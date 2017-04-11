@@ -211,3 +211,13 @@ header {
 i.material-icons + span {
   padding-left: 0.4em;
 }
+
+figure {
+  img {
+    width: 100%;
+  }
+  figcaption {
+    text-align: center;
+    font-size: 0.7em;
+  }
+}
